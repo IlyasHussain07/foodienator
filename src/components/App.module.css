@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+._header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 40px;
+}
+.title h2{
+    margin-left: 8px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+._header button{
+    width: 70px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+}
+._header button:hover{
+    box-shadow: 0 0 5px 0 #000;
+}
+
+._body{
+    display: flex;    
+    height: 87vh;
+}
+
+.filterSection{
+    max-width: 200px;
+    width: 100%;
+    border-right: 1px solid #d2d2d2;
+}
+.filterSection p{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 550;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.filterSection ul{
+    list-style: none;
+}
+.filterSection ul p{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.filterSection ul li{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.filterSection ul li input{
+    margin-right: 5px;
+}
+
+
+.productSection{
+    overflow-y: auto;
+    width: 1200px;
+
+}
+.menu{
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 10px;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.listOn{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #000;
+    cursor: pointer;
+}
+.listOff{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+.listOn:hover{
+    box-shadow: 0 0 1px 0 #000;
+    
+}
+.foodProducts{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.productSection::-webkit-scrollbar{
+    width: 10px;
+}
+.product{
+    width: 220px;
+    border: 1px solid #d2d2d2;
+    margin-top: 20px;
+    padding: 10px;
+}
+.image_container{
+    text-align: center;
+}
+.image_container img{
+    width: 200px;
+}
+.productDetails{
+    padding-left: 10px;
+}
+.productDetails p{
+    font-size: 18px;
+    font-weight: 550;
+    margin: 5px 0;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.StarIcons{
+    color: #e0c54c;
+}
+.productDetails button{
+    width: 60px;
+    height: 30px;
+    background: #e0c54c;
+    border: 1px solid #e0c54c;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0 #c5a61c;
+    cursor: pointer;
+}
+.productDetails button:hover{
+    box-shadow: 0 0 5px 0 #c5a61c;
+}
+
+
+
+
+
+.billingSection{
+    max-width: 300px;
+    width: 100%;
+    border-left: 1px solid #d2d2d2;
+    overflow-y: auto;
+}
+.billingSection::-webkit-scrollbar{
+    width: 10px;
+}
+.billHeader{
+    text-align: center;
+    padding: 10px;
+}
+.billHeader img{
+    width: 40px;
+}
+.billHeader span{
+    font-size: 14px;
+}
+.billProducts{
+    font-size: 14px;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.header p{
+    width: 200px;
+    text-align: center;
+}
+.productsBillBody{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.productsBillBody p{
+    width: 200px;
+    text-align: center;
+}
+.billTotal{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 550;
+    border-top: 1px solid #d2d2d1;
+    border-bottom: 1px solid #d2d2d1;
+}
+.orderbtn{
+    text-align: center;
+    padding: 10px;
+}
+.orderbtn button{
+    width: 100px;
+    height: 35px;
+    background: #e0c54c;
+    border: 1px solid #c5a61c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.category{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.category button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.category button:hover{
+    background: #d3d3d3;
+}
+.category .filter{
+    cursor: pointer;
+}
+.filterPopUp,
+.categoryPopUp,
+.cartPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+}
+.filterPopUpNo,
+.categoryPopUpNo,
+.cartPopUpNo{
+    display: none;
+}
+.cardFilter,
+.cardCatergory{
+    width: 250px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 0 #000;
+    border-radius: 10px;
+}
+.cardFilter p{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 550;
+    border-bottom: 1px solid #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+}
+.cardFilter ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.cardFilter ul li input{
+    margin-right: 5px;
+}
+.closeIcon{
+    cursor: pointer;
+}
+.cardCatergory p{
+    font-size: 18px;
+    font-weight: 550;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.cardCatergory ul li{
+    padding: 10px;
+    border-top: 1px solid #d2d2d2;
+}
+.cardCatergory ul li:hover{
+    background: #d2d3d3;
+}
+.billcard{
+    background: #fff;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.billSystemHome{
+    display: block;
+}
+
+
+@media(max-width: 768px){
+    .filterSection,
+    .billSystemHome{
+        display: none;
+    }
+    .menu ul{
+        display: none;
+    }
+    .category{
+        display: flex;
+    }
+    .product{
+        width: 190px;
+    }
+    .image_container img{
+        width: 140px;
+    }
+    .productDetails p{
+        font-size: 16px;
+    }
+    .StarIcons{
+        font-size: 18px !important;
+    }
+}
